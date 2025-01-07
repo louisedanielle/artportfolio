@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+    max-width: 100%; /* Ensure the container doesn't exceed the viewport */
+    overflow-wrap: break-word; /* Allows long words to break */
+    word-wrap: break-word; /* For legacy support */
+    width: 80%; /* Adjust as needed */
+    margin: auto; /* Center the container */
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color:rgb(45, 45, 175);
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a{
+    color: white;
+    /* so no underline*/
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    color: rgb(33, 33, 138);
+    font-weight: bold;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+    display: none;
+}
+  
+.hamburger-menu {
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+}
+  
+.hamburger-icon {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+  
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3 ease-in-out;
+}
+  
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+  
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+  
+.menu-links li {
+    list-style: none;
+}
+  
+.menu-links.open {
+    max-height: 300px;
+}
+  
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+  
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+  
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+  
+.hamburger-icon span:first-child {
+    transform: none;
+}
+  
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+  
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.content{
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1{
+    color:white;
+    margin: 0px 0px 20px;
+    font-size: 75px;
+}
+
+h3{
+    color:white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+h4{
+    color:rgb(231, 233, 255);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.newsletter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid;
+    outline: none;
+    border-radius: 30px;
+}
+
+.newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: rgb(33, 33, 138);
+    color: white;
+    box-shadow: 0px 0px 5px black, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+}
+
+.newsletter form input:last-child:hover{
+    cursor: pointer;
+}
+
+/*about section*/
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+
+.card{
+	width : 360px;
+	height : 500px;
+	display : inline-block;
+	border-radius : 20px;
+	padding : 15px 25px;
+	box-sizing : border-size;
+	cursor : pointer;
+	margin : 30px 10px;
+	background-size : cover;
+	transition : transform 0.5s;
+	margin-left : 30px;
+}
+
+.card1{
+	background-image : url(../img/others1.jpg);
+}
+
+.card2{
+	background-image : url(../img/others2.jpg);
+}
+
+.card3{
+	background-image : url(../img/others3.jpg);
+}
+
+.card4{
+	background-image : url(../img/others4.jpg);
+}
+
+.card5{
+	background-image : url(../img/others5.jpg);
+}
+
+.card6{
+	background-image : url(../img/others6.jpg);
+}
+
+.card7{
+	background-image : url(../img/others7.jpg);
+}
+
+.card8{
+	background-image : url(../img/others8.jpg);
+}
+
+.card9{
+	background-image : url(../img/others9.jpg);
+}
+
+.card10{
+	background-image : url(../img/others10.jpg);
+}
+
+.card11{
+	background-image : url(../img/others11.jpg);
+}
+
+.card12{
+	background-image : url(../img/others12.jpg);
+}
+
+.card:hover{
+	transform : translateY(-10px);
+}
+
+h5{
+    color:rgb(33, 33, 138);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+h6{
+    color:white;
+    margin: 30px 30px 20px;
+    font-size: 55px;
+}
+
+h7{
+    color:white;
+    font-size: 25px;
+    margin: 30px 30px 0px;
+}
+
+.p{
+    color:rgb(33, 33, 138);
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about img{
+    position: relative;
+    margin: 0px 8px 5px;
+    height: 95%;
+    width: 400px
+}
+
+/*only edogawa conan*/
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/*only the one under it*/
+footer p:nth-child(2){
+    font-size: 17px;
+    color: white;
+    width: 500px;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 20px;;
+}
+
+.social{
+    display:flex;
+
+}
+
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(33, 33, 138);
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.copyright{
+    position: absolute;
+    color: rgb(60, 60, 192);
+    bottom: 35px;
+    font-size: 15px;
+}
+
+@media (max-width: 1228px) {
+    #desktop-nav {
+        display: none;
+    }
+      
+    #hamburger-nav {
+        display: flex;
+    }
+    h7{
+        font-size: 16px;
+    }
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 769px) {
+}
